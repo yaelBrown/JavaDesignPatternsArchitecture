@@ -1,0 +1,33 @@
+SOLID Principals
+
+SRP Single Responsiblity Principle
+OCP Open Closed Principle
+LSP Liskov Substitution Principle
+ISP Interface Segregation Principle
+DIP Dependency Inversion Principle
+
+SRP - Only One Reason to change. 
+  all should have one responsibility
+  classes should only do one thing. 
+
+OCP - open for extension but closed for modification
+  Classes should not have to be modified for increased functionality
+  they should only be expanded on
+    Use of implementing a abstract class methods (java) to other classes then defining how they are used. 
+
+LSP - subtypes must be substitutable for their base types
+  Only use inheritance when your super class is replaceable by a subclass
+
+ISP - When two classes are talking to each other, they should have the smallest possible interface between them. 
+  Clients should not be forced to implement interfaces they don't use
+  Many small interfaces are preferred based on groups of methods
+    each one serving a submodule
+  Should not have to create a dummy method, to keep compiler happy
+    Seperate with abstract classes, or more interfaces
+  Keep your faces as small as possible
+    If you change the interfaces, then all the implementing classes should change
+
+DIP - depend upon abstractions rather than concrete classes.
+  have methods that do not invert responsibility and leave it to other methods
+  prevents the idea that if a method increases, then method does not need to be continually refactored. 
+  allows methods to be more flexible and not have to be refactored for changes
